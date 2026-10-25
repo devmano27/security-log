@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local database
+auth_lab.db
+instance/
+*.sqlite
+*.sqlite3
+
+# Audit reports contain host details: keep local, except the sample
+reports/*
+!reports/sample-report.json
+!reports/.gitkeep
+secureconfig-report.json
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
